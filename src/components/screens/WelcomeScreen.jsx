@@ -8,13 +8,19 @@ function WelcomeScreen() {
     <Container className="page d-flex flex-column align-items-center">
       <div className="p-5">
         <Row>
+          <div className='welcomeScreenYYCText'>
           YYC
+            </div>
         </Row>
         <Row>
-          Welcome To,
+          <div className='welcomeScreenWelcomeToText'>
+          Welcome To
+          </div>
         </Row>
         <Row>
+        <div className='welcomeScreenCalgaryText'>
           Calgary!
+          </div>
         </Row>
       </div>
 

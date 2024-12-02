@@ -6,11 +6,10 @@ function LanguageSelector() {
   return (
     <div className='languageSelector'>
       <LanguageButton language="English" />
-      <LanguageButton language="Mexican" />
+      <LanguageButton language="Spanish" />
       <LanguageButton language="Hindu" />
       <LanguageButton language="Italian" />
-      <LanguageButton language="English" />
-    </div>
+      </div>
   );
 }
 
