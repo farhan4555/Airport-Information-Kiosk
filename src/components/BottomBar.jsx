@@ -13,7 +13,14 @@ function BottomBar() {
     const updateDateTime = () => {
       const now = new Date();
       const options = { timeZone: 'America/Edmonton', hour12: true };
-      setDate(now.toLocaleDateString('en-CA', { timeZone: 'America/Edmonton' }));
+      // Format the date as "Wednesday, December 3"
+      const formattedDate = now.toLocaleDateString('en-CA', {
+        timeZone: 'America/Edmonton',
+        weekday: 'long', // Full weekday name (e.g., "Wednesday")
+        month: 'long', // Full month name (e.g., "December")
+        day: 'numeric', // Day of the month (e.g., "3")
+      });
+      setDate(formattedDate);
       setTime(now.toLocaleTimeString('en-CA', { ...options, hour: '2-digit', minute: '2-digit' }));
     };
 
@@ -41,7 +48,7 @@ function BottomBar() {
 
   return (
     <Row className="bottomBar">
-      <Col md={3} className="text-center">
+      <Col md={4} className="text-center">
         <div className="flex-container">
           <img src="./src/components/images/cal.JPG" alt="calendar" />
           <span>{date || 'Loading...'}</span>
@@ -51,10 +58,9 @@ function BottomBar() {
       <Col md={3} className="text-center">
         <div className="flex-container">
           <img src="./src/components/images/weat.JPG" alt="weather" />
-          <span>{temperature !== 'Loading...' ? `${temperature} Celsius` : 'Loading...'}</span>
+          <span>{temperature !== 'Loading...' ? `${temperature} ` : 'Loading...'}</span>
         </div>
       </Col>
-      <Col md={1} className="text-center" />
       <Col md={3} className="text-center">
         <div className="flex-container">
           <img src="./src/components/images/tim.JPG" alt="clock" />

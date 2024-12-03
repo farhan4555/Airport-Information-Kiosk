@@ -7,9 +7,10 @@ import {
 function LogoButton({ text, imgPath, link }) {
   return (
     <button type="button" className="btn btn-light text-nowrap">
+      {imgPath && <img src={imgPath} alt="Logo" className="logo-img" />}
       <Link style={{ color: "black" }} to={"/" + link}>{text}</Link>
     </button>
   );
 }
 
-export default LogoButton
+export default LogoButton;
