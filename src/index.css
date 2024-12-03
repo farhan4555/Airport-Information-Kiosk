@@ -196,3 +196,9 @@ image {
 .qrCodeImg {
   height: 200px;
 }
+
+.searchBar {
+  justify-self: center;
+  width: 80%;
+  color: gray;
+}
