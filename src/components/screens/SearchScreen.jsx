@@ -11,9 +11,7 @@ function ScreenScreen() {
         <BackButton />
       </div>
 
-      {/* Adjust the positioning of the welcome text */}
       <div className="p-3 flex-grow-0">
-
         <Row className="mb-3">
           <div className='genericTitle searchScreenTitle'>
             What are you looking for?
@@ -21,7 +19,6 @@ function ScreenScreen() {
         </Row>
       </div>
 
-      {/* Adjust the positioning of the buttons */}
       <div className="w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-3 w-100 justify-content-center">
           <SelectorButton text="Terminals" />
@@ -44,7 +41,7 @@ function ScreenScreen() {
           <SelectorButton text="Help Desk" />
         </Row>
         <Row className="mb-3">
-          <LogoButton text="Airport Map" imgPath="" link="search" />
+          <LogoButton text="Airport Map" imgPath="" link="map" />
         </Row>
       </div>
     </Container>

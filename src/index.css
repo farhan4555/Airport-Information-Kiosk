@@ -171,3 +171,28 @@ image {
   width: 150px;
   justify-content: center;
 }
+
+.flightsTable {
+  width: 1%;
+}
+
+.wifiInstructionText {
+  font-size: 20px;
+}
+
+.unableToConnectText {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.greyBackground {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(94, 93, 93);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.qrCodeImg {
+  height: 200px;
+}
