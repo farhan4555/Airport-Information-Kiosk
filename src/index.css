@@ -56,12 +56,34 @@
   margin: 0;
   height: 80px;
   width: 100%;
-  background-color: #333;
+  background-color: #404040;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/*For teh bottom bar*/
+.flex-container {
+  display: flex;
+  align-items: center; /* Vertically center the text and image */
+  justify-content: center; /* Center the entire content horizontally */
+  gap: 10px; /* Add spacing between text and image */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/*For teh bottom bar*/
+.flex-container img {
+  width: 30px; /* Adjust the image size */
+  height: auto;
+}
+
+/*For teh bottom bar*/
+.flex-container span {
+  font-size: 16px; /* Adjust text size */
+  color: #ffffff; /* Optional: Customize text color */
+}
+
 
 .welcomeScreenYYCText {
   color: #ff0000;
