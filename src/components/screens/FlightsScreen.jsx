@@ -4,7 +4,6 @@ import LogoButton from '../common/LogoButton';
 import BackButton from '../common/BackButton';
 import SelectorButton from '../common/SelectorButton';
 import Table from 'react-bootstrap/Table';
-import Row from 'react-bootstrap/Row';
 
 function FlightsScreen() {
   return (
