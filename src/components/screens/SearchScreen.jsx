@@ -27,20 +27,20 @@ function ScreenScreen() {
 
       <div className="mt-2 w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Terminals" />
-          <SelectorButton text="Baggage Claim" />
+          <SelectorButton text="Terminals" link="transportation/washrooms"/>
+          <SelectorButton text="Baggage Claim" link="transportation/washrooms"/>
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Washrooms" />
-          <SelectorButton text="Connections" />
+          <SelectorButton text="Washrooms" link="transportation/washrooms" />
+          <SelectorButton text="Connections" link="transportation/washrooms"/>
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Parking" />
-          <SelectorButton text="Hotels" />
+          <SelectorButton text="Parking" link="transportation/washrooms" />
+          <SelectorButton text="Hotels" link="transportation/washrooms"/>
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Shops" />
-          <SelectorButton text="Parking" />
+          <SelectorButton text="Shops" link="transportation/washrooms"/>
+          <SelectorButton text="Parking" link="transportation/washrooms"/>
         </Row>
         <Row className="mt-3">
           <LogoButton text="Airport Map" imgPath="" link="map" />

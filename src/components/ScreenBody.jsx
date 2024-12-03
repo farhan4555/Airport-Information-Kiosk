@@ -7,8 +7,8 @@ import SearchScreen from './screens/SearchScreen';
 import TransportationScreen from './screens/TransportationScreen.jsx';
 import FlightsScreen from './screens/FlightsScreen.jsx';
 import WifiScreen from './screens/WifiScreen.jsx';
-
-
+import TransportationExample from './screens/TransportationExample.jsx';
+import SearchExample from './screens/SearchExample.jsx';
 
 function ScreenBody() {
   return (
@@ -20,6 +20,8 @@ function ScreenBody() {
           <Route path="/transportation" element={<TransportationScreen/>} />
           <Route path="/flights" element={<FlightsScreen/>} />
           <Route path="/wifi" element={<WifiScreen/>} />
+          <Route path="/transportation/calgaryTransit" element={<TransportationExample/>} />
+          <Route path="/transportation/washrooms" element={<SearchExample/>} />
           <Route path="/*" element={<WelcomeScreen />} />
         </Routes>
       </BrowserRouter>
