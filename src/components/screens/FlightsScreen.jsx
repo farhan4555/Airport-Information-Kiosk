@@ -1,5 +1,4 @@
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import LogoButton from '../common/LogoButton';
 import BackButton from '../common/BackButton';
 import SelectorButton from '../common/SelectorButton';

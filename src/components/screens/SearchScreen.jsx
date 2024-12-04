@@ -3,6 +3,9 @@ import Row from 'react-bootstrap/Row';
 import LogoButton from '../common/LogoButton';
 import BackButton from '../common/BackButton';
 import SelectorButton from '../common/SelectorButton';
+import { useTranslation } from 'react-i18next'; // Import the translation hook
+
+
 
 function ScreenScreen() {
   const { t } = useTranslation(); // Use the translation hook
@@ -19,36 +22,31 @@ function ScreenScreen() {
             {t('searchTitle')}{}
           </div>
         </Row>
-        <Form>
-          <Form.Group className="mb-3 searchBar" controlId="exampleForm.ControlInput1">
-            <Form.Control type="text" placeholder="Search" />
-          </Form.Group>
-        </Form>
       </div>
 
-      <div className="mt-2 w-100 px-3 d-flex flex-column align-items-center">
+      <div className="w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Terminals" />
-          <SelectorButton text="Baggage Claim" />
+          <SelectorButton text={t('terminals')} />
+          <SelectorButton text={t('baggageClaim')} />
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Washrooms" />
-          <SelectorButton text="Connections" />
+          <SelectorButton text= {t('washrooms')} />
+          <SelectorButton text= {t('connections')} />
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Parking" />
-          <SelectorButton text="Hotels" />
+          <SelectorButton text={t('parking')} />
+          <SelectorButton text={t('hotels')} />
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Shops" />
-          <SelectorButton text="Parking" />
+          <SelectorButton text={t('shops')} />
+          <SelectorButton text={t('busStops')} />
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text="Bus Stops" />
-          <SelectorButton text="Help Desk" />
+          <SelectorButton text={t('restaurant')} />
+          <SelectorButton text={t('helpDesk')} />
         </Row>
         <Row className="mb-3">
-          <LogoButton text="Airport Map" imgPath="" link="map" />
+          <LogoButton text={t('airportMap')} imgPath="" link="map" />
         </Row>
       </div>
     </Container>
