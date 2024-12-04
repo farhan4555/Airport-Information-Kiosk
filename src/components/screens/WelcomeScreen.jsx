@@ -1,9 +1,11 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import LogoButton from '../common/LogoButton'
+import LogoButton from '../common/LogoButton';
+import { useTranslation } from 'react-i18next'; // Import translation hook
 
 function WelcomeScreen() {
+  const { t } = useTranslation(); // Use the translation function
   return (
     <Container className="page d-flex flex-column align-items-center">
       {/* Adjust the positioning of the welcome text */}
@@ -15,12 +17,12 @@ function WelcomeScreen() {
         </Row>
         <Row className="mb-1">
           <div className='welcomeScreenWelcomeToText'>
-            Welcome 
+          {t('welcome')} {/* Dynamic translation */}
           </div>
         </Row>
         <Row className="mb-3">
           <div className='welcomeScreenCalgaryText'>
-            To Calgary!
+          {t('toCalgary')} {/* Dynamic translation */}
           </div>
         </Row>
       </div>
@@ -29,24 +31,24 @@ function WelcomeScreen() {
       <div className="w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-3">
           <Col md={6} className="d-flex justify-content-center">
-            <LogoButton text="Airport Map" imgPath="" link="map"/>
+          <LogoButton text={t('AirportMap')} imgPath="" link="map" /> {/* Dynamic translation */}
           </Col>
           <Col md={6} className="d-flex justify-content-center">
-            <LogoButton text="Search Airport" imgPath="" link="search" />
+            <LogoButton text={t("searchAirport")} imgPath="" link="search" />
           </Col>
         </Row>
 
         <Row className="mb-3">
           <Col md={6} className="d-flex justify-content-center">
-            <LogoButton text="Transportation" imgPath="" link="transportation" />
+            <LogoButton text={t("transportation")} imgPath="" link="transportation" />
           </Col>
           <Col md={6}>
             <Row>
               <Col xs={6} className="d-flex justify-content-center">
-                <LogoButton text="Flights" imgPath="" link="flights" />
+                <LogoButton text={t("flights")} imgPath="" link="flights" />
               </Col>
               <Col xs={6} className="d-flex justify-content-center">
-                <LogoButton text="Wifi" imgPath="" link="wifi" />
+                <LogoButton text={t("wifi")} imgPath="" link="wifi" />
               </Col>
             </Row>
           </Col>

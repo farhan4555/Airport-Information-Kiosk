@@ -1,38 +1,49 @@
-import React, { useState } from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React, { useState, useEffect } from 'react';
+import i18n from 'i18next';
 import LanguageButton from './common/LanguageButton';
 
 function LanguageSelector() {
-  const [selectedLanguage, setSelectedLanguage] = useState('English');
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language); // Track the current language
 
-  const handleLanguageSelect = (language) => {
-    setSelectedLanguage(language);
+  // Subscribe to language changes
+  useEffect(() => {
+    const handleLanguageChange = (lang) => setCurrentLanguage(lang);
+
+    i18n.on('languageChanged', handleLanguageChange); // Listen for language changes
+
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange); // Cleanup listener on unmount
+    };
+  }, []);
+
+  const handleLanguageSelect = (languageCode) => {
+    i18n.changeLanguage(languageCode); // Update global language
   };
 
   return (
     <div className="languageSelector">
-      <LanguageButton 
-        language="English" 
-        isSelected={selectedLanguage === 'English'} 
-        onClick={() => handleLanguageSelect('English')} 
+      <LanguageButton
+        language="English"
+        isSelected={currentLanguage === 'en'} // Use currentLanguage state
+        onClick={() => handleLanguageSelect('en')} // Change language to English
       />
-      <LanguageButton 
-        language="Spanish" 
-        isSelected={selectedLanguage === 'Spanish'} 
-        onClick={() => handleLanguageSelect('Spanish')} 
+      <LanguageButton
+        language="Spanish"
+        isSelected={currentLanguage === 'es'}
+        onClick={() => handleLanguageSelect('es')} // Change language to Spanish
       />
-      <LanguageButton 
-        language="Hindu" 
-        isSelected={selectedLanguage === 'Hindu'} 
-        onClick={() => handleLanguageSelect('Hindu')} 
+      <LanguageButton
+        language="Hindi"
+        isSelected={currentLanguage === 'hi'}
+        onClick={() => handleLanguageSelect('hi')} // Change language to Hindi
       />
-      <LanguageButton 
-        language="Italian" 
-        isSelected={selectedLanguage === 'Italian'} 
-        onClick={() => handleLanguageSelect('Italian')} 
+      <LanguageButton
+        language="Italian"
+        isSelected={currentLanguage === 'it'}
+        onClick={() => handleLanguageSelect('it')} // Change language to Italian
       />
     </div>
   );
 }
+
 export default LanguageSelector;

@@ -67,8 +67,9 @@ image {
   background-color: #404040;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 20px; /* Add padding for spacing */
 }
 
 
@@ -77,8 +78,10 @@ image {
   display: flex;
   align-items: center; /* Vertically center the text and image */
   justify-content: center; /* Center the entire content horizontally */
-  gap: 10px; /* Add spacing between text and image */
+  gap:5px; /* Add spacing between text and image */
   white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 100px;
+  margin-left: 20px;
 }
 
 /*For teh bottom bar*/
@@ -89,7 +92,7 @@ image {
 
 /*For teh bottom bar*/
 .flex-container span {
-  font-size: 16px; /* Adjust text size */
+  font-size: 14px; /* Adjust text size */
   color: #ffffff; /* Optional: Customize text color */
 }
 

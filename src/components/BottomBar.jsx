@@ -2,39 +2,49 @@ import React, { useState, useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../index.css'; // Import your CSS file
+import { useTranslation } from 'react-i18next';
+
 
 function BottomBar() {
+  const { i18n } = useTranslation(); // Initialize translation for locale-based formatting
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [temperature, setTemperature] = useState('Loading...');
 
   useEffect(() => {
-    // Update date and time
+    // Update date dynamically
     const updateDateTime = () => {
       const now = new Date();
-      const options = { timeZone: 'America/Edmonton', hour12: true };
-      // Format the date as "Wednesday, December 3"
-      const formattedDate = now.toLocaleDateString('en-CA', {
-        timeZone: 'America/Edmonton',
-        weekday: 'long', // Full weekday name (e.g., "Wednesday")
-        month: 'long', // Full month name (e.g., "December")
-        day: 'numeric', // Day of the month (e.g., "3")
+
+      // Format the date dynamically based on the selected language
+      const formattedDate = now.toLocaleDateString(i18n.language, {
+        weekday: 'long',
+        month: 'long',
+        day: 'numeric',
       });
+
+      // Format the time always in English (default locale)
+      const formattedTime = now.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+      });
+
       setDate(formattedDate);
-      setTime(now.toLocaleTimeString('en-CA', { ...options, hour: '2-digit', minute: '2-digit' }));
+      setTime(formattedTime);
     };
 
     updateDateTime();
     const interval = setInterval(updateDateTime, 60000); // Update every minute
 
     return () => clearInterval(interval);
-  }, []);
+  }, [i18n.language]); // Re-run when language changes
 
   useEffect(() => {
-    // Fetch Calgary temperature from a public API without keys
+    // Fetch temperature dynamically
     const fetchTemperature = async () => {
       try {
-        const response = await fetch('https://wttr.in/Calgary?format=%t'); // Public weather service wttr.in
+        const response = await fetch('https://wttr.in/Calgary?format=%t'); // Public weather API
         const temp = await response.text();
         setTemperature(temp.trim());
       } catch (error) {
@@ -48,23 +58,27 @@ function BottomBar() {
 
   return (
     <Row className="bottomBar">
+      {/* Date Section */}
       <Col md={4} className="text-center">
         <div className="flex-container">
-          <img src="./src/components/images/cal.JPG" alt="calendar" />
+          <img src="./src/components/images/cal.JPG" alt="Date" />
           <span>{date || 'Loading...'}</span>
         </div>
       </Col>
-      <Col md={1} className="text-center" />
-      <Col md={3} className="text-center">
+
+      {/* Temperature Section */}
+      <Col md={4} className="text-center">
         <div className="flex-container">
-          <img src="./src/components/images/weat.JPG" alt="weather" />
-          <span>{temperature !== 'Loading...' ? `${temperature} ` : 'Loading...'}</span>
+          <img src="./src/components/images/weat.JPG" alt="Temperature" />
+          <span>{temperature !== 'Loading...' ? `${temperature}` : 'Loading...'}</span>
         </div>
       </Col>
-      <Col md={3} className="text-center">
+
+      {/* Time Section (Static English Formatting) */}
+      <Col md={4} className="text-center">
         <div className="flex-container">
-          <img src="./src/components/images/tim.JPG" alt="clock" />
-          <span>{time || 'Loading...'}</span>
+          <img src="./src/components/images/tim.JPG" alt="Time" />
+          <span>{time || 'Loading...'}</span> {/* Time in English */}
         </div>
       </Col>
     </Row>
