@@ -25,16 +25,16 @@ function TransportationScreen() {
       {/* Adjust the positioning of the buttons */}
       <div className="w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Taxi" />
+          <SelectorButton text="Taxi" link="transportation/calgaryTransit" />
         </Row>
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Calgary Transit" />
+          <SelectorButton text="Calgary Transit" link="transportation/calgaryTransit" />
         </Row>
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Uber" />
+          <SelectorButton text="Uber" link="transportation/calgaryTransit" />
         </Row>
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Car Rental" />
+          <SelectorButton text="Car Rental" link="transportation/calgaryTransit" />
         </Row>
       </div>
     </Container>

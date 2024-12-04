@@ -199,3 +199,25 @@ image {
 .qrCodeImg {
   height: 200px;
 }
+
+.searchBar {
+  justify-self: center;
+  width: 80%;
+  color: gray;
+}
+
+.logoButton {
+  width: 170px;
+}
+
+.welcomeButtons {
+  margin-top: -40px;
+}
+.logo-img {
+  height: 30px;
+  width: 50px;
+}
+
+.titleScreenText {
+  margin-top: -40px;
+}
