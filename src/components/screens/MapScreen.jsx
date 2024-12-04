@@ -2,8 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import LogoButton from '../common/LogoButton';
 import BackButton from '../common/BackButton';
+import { useTranslation } from 'react-i18next'; // Import translation hook
 
 function MapScreen() {
+  const { t } = useTranslation(); // Use the translation function
   return (
     <Container className="page d-flex flex-column align-items-center">
       <div className='d-flex w-100 justify-content-left'>
@@ -15,7 +17,7 @@ function MapScreen() {
 
         <Row className="mb-3">
           <div className='genericTitle'>
-            Airport Map
+            {t("AirportMap")}
           </div>
         </Row>
       </div>
@@ -27,7 +29,7 @@ function MapScreen() {
         </Row>
 
         <Row className="mb-3 p-3">
-          <LogoButton text="Search Airport" imgPath="" link="search" />
+          <LogoButton text={t("searchAirport")} imgPath="" link="search" />
         </Row>
       </div>
     </Container>

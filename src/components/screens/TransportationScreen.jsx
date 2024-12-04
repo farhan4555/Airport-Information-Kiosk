@@ -3,9 +3,13 @@ import Row from 'react-bootstrap/Row';
 import LogoButton from '../common/LogoButton';
 import BackButton from '../common/BackButton';
 import SelectorButton from '../common/SelectorButton';
+import { useTranslation } from 'react-i18next'; // Import translation hook
+
+
 
 
 function TransportationScreen() {
+  const {t } = useTranslation();
   return (
     <Container className="page d-flex flex-column align-items-center">
       <div className='d-flex w-100 justify-content-left'>
@@ -17,7 +21,7 @@ function TransportationScreen() {
 
         <Row className="mb-3">
           <div className='genericTitle'>
-            Transportation
+            {t("transportation")}
           </div>
         </Row>
       </div>
@@ -25,16 +29,16 @@ function TransportationScreen() {
       {/* Adjust the positioning of the buttons */}
       <div className="w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Taxi" link="transportation/calgaryTransit" />
+          <SelectorButton text={t("taxi")} link="transportation/calgaryTransit" />
         </Row>
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Calgary Transit" link="transportation/calgaryTransit" />
+          <SelectorButton text={t("calgarytransit")} link="transportation/calgaryTransit" />
         </Row>
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Uber" link="transportation/calgaryTransit" />
+          <SelectorButton text={t("uber")} link="transportation/calgaryTransit" />
         </Row>
         <Row className="mb-4 w-100 justify-content-center">
-          <SelectorButton text="Car Rental" link="transportation/calgaryTransit" />
+          <SelectorButton text={t("carrental")} link="transportation/calgaryTransit" />
         </Row>
       </div>
     </Container>
