@@ -28,26 +28,26 @@ function WelcomeScreen() {
       </div>
 
       {/* Adjust the positioning of the buttons */}
-      <div className="w-100 px-3 d-flex flex-column align-items-center">
-        <Row className="mb-3">
-          <Col md={6} className="d-flex justify-content-center">
+      <div className="w-100 px-2 d-flex flex-column align-items-center">
+        <Row className="mb-3 justify-content-center">
+          <Col md={5} className="d-flex justify-content-center">
           <LogoButton text={t('AirportMap')} imgPath="" link="map" /> {/* Dynamic translation */}
           </Col>
-          <Col md={6} className="d-flex justify-content-center">
+          <Col md={7} className="d-flex justify-content-center">
             <LogoButton text={t("searchAirport")} imgPath="" link="search" />
           </Col>
         </Row>
 
-        <Row className="mb-3">
-          <Col md={6} className="d-flex justify-content-center">
+        <Row className="mb-3 justify-content-center">
+          <Col xs={4} className="d-flex justify-content-center">
             <LogoButton text={t("transportation")} imgPath="" link="transportation" />
           </Col>
-          <Col md={6}>
+          <Col md={7}>
             <Row>
-              <Col xs={6} className="d-flex justify-content-center">
+              <Col xs={5} className="d-flex justify-content-center">
                 <LogoButton text={t("flights")} imgPath="" link="flights" />
               </Col>
-              <Col xs={6} className="d-flex justify-content-center">
+              <Col xs={7} className="d-flex justify-content-center">
                 <LogoButton text={t("wifi")} imgPath="" link="wifi" />
               </Col>
             </Row>
