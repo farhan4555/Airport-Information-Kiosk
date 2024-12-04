@@ -3,7 +3,7 @@
   height: 767px;
   border-radius: 30px;
   background-color: #f8f9fa;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4), -10px -10px 15px rgba(255, 255, 255, 0.5); /* Shadow for 3D effect */
   /* drop shadow */
   margin: auto;
   /* center the container */
@@ -12,7 +12,19 @@
   /* align elements horizontally*/
   padding: 0;
   overflow: hidden;
+  perspective: 1000px; /* Adds perspective */
+  background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Subtle gradient */
 }
+
+
+
+body {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; 
+  margin: 0; 
+  }
 
 image {
   width: 100%;
@@ -171,8 +183,10 @@ image {
 .selectorButton {
   margin-right: 10px;
   margin-bottom: 10px;
-  width: 150px;
+  width: 180px;
   justify-content: center;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .flightsTable {
