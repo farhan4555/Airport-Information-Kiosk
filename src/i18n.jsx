@@ -50,8 +50,8 @@ const resources = {
     translation: {
       welcome: "Bienvenido",
       toCalgary: "A Calgary!",
-      AirportMap: "Mapa del Aeropuerto",
-      searchAirport: "Buscar Aeropuerto",
+      AirportMap: "Mapa del",
+      searchAirport: "Buscar Aeropuert",
       transportation: "Transporte",
       flights: "Vuelos",
       wifi: "Wi-Fi",
@@ -123,7 +123,7 @@ const resources = {
     translation: {
       welcome: "Benvenuto",
       toCalgary: "A Calgary!",
-      AirportMap: "Mappa dell'Aeroporto",
+      AirportMap: "Mappa dell",
       searchAirport: "Cerca Aeroporto",
       transportation: "Trasporto",
       flights: "Voli",
