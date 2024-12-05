@@ -25,15 +25,33 @@ const resources = {
       busStops: "Bus Stops",
       helpDesk: "Help Desk",
       airportMap: "Airport Map",
-      restaurant: "Restaurant"
+      restaurant: "Restaurant",
+      back: "Back",
+      title: "Connect to Airport Wi-Fi",
+      instruction: "Scan the QR Code to connect to YYC Airport's free wi-fi! If you're unable to connect:",
+      step1: "- Go into your device's Wi-Fi settings.",
+      step2: "- Look for the wifi-network: 'YYC Airport Free Wi-Fi'",
+      step3: "- Connect to this network.",
+      taxi: "Taxi",
+      carrental: "Car Rental",
+      uber: "Uber",
+      calgarytransit: "Calgary Transit"
+      
+
+
+      
+
+      
+
+      
     },
   },
   es: {
     translation: {
       welcome: "Bienvenido",
       toCalgary: "A Calgary!",
-      AirportMap: "Mapa del Aeropuerto",
-      searchAirport: "Buscar Aeropuerto",
+      AirportMap: "Mapa del",
+      searchAirport: "Buscar Aeropuert",
       transportation: "Transporte",
       flights: "Vuelos",
       wifi: "Wi-Fi",
@@ -51,7 +69,17 @@ const resources = {
       busStops: "Paradas de autobús",
       helpDesk: "Mostrador de ayuda",
       airportMap: "Mapa del aeropuerto",
-      restaurant: "Restaurante"
+      restaurant: "Restaurante",
+      back: "Atrás",
+      title: "Connectez-vous au Wi-Fi",
+      instruction: "Scannez le code QR pour vous connecter au Wi-Fi gratuit de l’aéroport YYC !",
+      step1: "-Accédez aux paramètres Wi-Fi de votre appareil.",
+      step2: "-Recherchez le réseau Wi-Fi : ‘Wi-Fi gratuit de l’aéroport YYC.",
+      step3: "-Connectez-vous à ce réseau.",
+      taxi: "Taxi",
+      carrental: "Alquiler de coches",
+      uber: "Uber",
+      calgarytransit: "Transporte de Calgary"
     },
   },
   hi: {
@@ -77,14 +105,25 @@ const resources = {
       busStops: "बस स्टॉप",
       helpDesk: "मदद डेस्क",
       airportMap: "हवाई अड्डा मानचित्र",
-      restaurant: "रेस्टोरेंट"
+      restaurant: "रेस्टोरेंट",
+      back: "पीछे",
+      title:"हवाई अड्डे वाई-फाई से कनेक्ट करें",
+      instruction:"वाई-फाई से कनेक्ट करने के लिए QR कोड को स्कैन करें! अगर आप कनेक्ट नहीं कर पा रहे हैं:",
+      step1:"- अपने डिवाइस की वाई-फाई सेटिंग्स में जाएं।",
+      step2:"- वाई-फाई नेटवर्क देखें: ‘YYC Airport Free Wi-Fi'",
+      step3:"- इस नेटवर्क से कनेक्ट करें।",
+      taxi: "टैक्सी",
+      carrental: "गाड़ी किराए पर लेना",
+      uber: 'ऊबर',
+      calgarytransit: "कैलगरी ट्रांजिट"
+
     },
   },
   it: {
     translation: {
       welcome: "Benvenuto",
       toCalgary: "A Calgary!",
-      AirportMap: "Mappa dell'Aeroporto",
+      AirportMap: "Mappa dell",
       searchAirport: "Cerca Aeroporto",
       transportation: "Trasporto",
       flights: "Voli",
@@ -102,7 +141,17 @@ const resources = {
       shops: "Negozi",
       busStops: "Fermate degli autobus",
       helpDesk: "Banco informazioni",
-      restaurant: "Ristorante"
+      restaurant: "Ristorante",
+      back: "Indietro",
+      title:"Connettiti al Wi-Fi dell’Aeroporto",
+      instruction:"Scansiona il codice QR per connetterti al Wi-Fi gratuito dell’aeroporto YYC! Se non riesci a connetterti:",
+      step1:"- Vai alle impostazioni Wi-Fi del tuo dispositivo.",
+      step2:"- Cerca la rete Wi-Fi: ‘YYC Airport Free Wi-Fi’",
+      step3:"- Connettiti a questa rete.",
+      taxi: "Taxi",
+      carrental: "Noleggio auto",
+      uber: "Uber",
+      calgarytransit: "Trasporti di Calgary"
       
     },
   },

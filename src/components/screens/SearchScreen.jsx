@@ -26,24 +26,24 @@ function ScreenScreen() {
 
       <div className="w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text={t('terminals')} />
-          <SelectorButton text={t('baggageClaim')} />
+          <SelectorButton text={t('terminals')} link="search/washrooms" />
+          <SelectorButton text={t('baggageClaim')} link="search/washrooms" />
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text= {t('washrooms')} />
-          <SelectorButton text= {t('connections')} />
+          <SelectorButton text= {t('washrooms')} link="search/washrooms" />
+          <SelectorButton text= {t('connections')} link="search/washrooms" />
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text={t('parking')} />
-          <SelectorButton text={t('hotels')} />
+          <SelectorButton text={t('parking')} link="search/washrooms"/>
+          <SelectorButton text={t('hotels')} link="search/washrooms"/>
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text={t('shops')} />
-          <SelectorButton text={t('busStops')} />
+          <SelectorButton text={t('shops')} link="search/washrooms"/>
+          <SelectorButton text={t('busStops')} link="search/washrooms" />
         </Row>
         <Row className="mb-3 w-100 justify-content-center">
-          <SelectorButton text={t('restaurant')} />
-          <SelectorButton text={t('helpDesk')} />
+          <SelectorButton text={t('restaurant')} link="search/washrooms" />
+          <SelectorButton text={t('helpDesk')} link="search/washrooms" />
         </Row>
         <Row className="mb-3">
           <LogoButton text={t('airportMap')} imgPath="" link="map" />

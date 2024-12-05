@@ -4,14 +4,14 @@ import Col from 'react-bootstrap/Col';
 function Header() {
   return (
     <Row className="headerRow">
-      <Col md={2} className="text-center">
-      <img src="./src/components/images/logo.jpg" alt="logo" />
-       
+      <Col md={3}>
+        <img src="./src/components/images/logo.png" alt="logo" className="logo" />
       </Col>
-      <Col md={5} className="text-center" />
-      <Col md={1} className="text-center">
-      <img src="./src/components/images/icon.PNG" alt="logo" />
-        
+      <Col md={5}>
+        <div className='informationKioskHeaderImgs d-flex justi'>
+
+          <img src="./src/components/images/infokiosk.png" alt="logo" className="infoKiosk" />
+        </div>
       </Col>
     </Row>
   );

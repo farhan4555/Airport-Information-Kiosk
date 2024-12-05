@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import i18n from 'i18next';
 import LanguageButton from './common/LanguageButton';
+import Assistance from './Assistance.jsx';
 
 function LanguageSelector() {
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language); // Track the current language
