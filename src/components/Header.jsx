@@ -8,8 +8,8 @@ function Header() {
       <img src="./src/components/images/logo.png" alt="logo" className = "logo"/>
        
       </Col>
-      <Col md={5} className="text-center" />
-      <Col md={1} className="tex-center">
+      <Col md={8} className="text-center" />
+      <Col md={2} className="text-center">
         <img src="./src/components/images/icon2.png" alt="logo" className = "infoPtTwo" />
         <img src="./src/components/images/icon1.png" alt="logo" className = "infoPtOne"/>
       </Col>

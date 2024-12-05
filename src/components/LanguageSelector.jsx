@@ -29,9 +29,9 @@ function LanguageSelector() {
         onClick={() => handleLanguageSelect('en')} // Change language to English
       />
       <LanguageButton
-        language="Spanish"
-        isSelected={currentLanguage === 'es'}
-        onClick={() => handleLanguageSelect('es')} // Change language to Spanish
+        language="French"
+        isSelected={currentLanguage === 'fr'}
+        onClick={() => handleLanguageSelect('fr')} // Change language to French
       />
       <LanguageButton
         language="Hindi"
