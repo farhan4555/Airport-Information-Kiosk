@@ -59,8 +59,8 @@ image {
 
 .languageSelector {
   display: flex;
-  width: 95%;
-  height: 10%;
+  width: 80%;
+  height: 100%;
   border-radius: 30px;
   margin-left: 5px;
   justify-content: center;
@@ -71,6 +71,7 @@ image {
   overflow: hidden;
   padding-right: 2%;
 }
+
 
 .languageButton {
   padding-left: 10px;
@@ -311,14 +312,7 @@ image {
   flex-direction: column;
   align-items: center;
 }
-.infoPtTwo {
-  width: 100%;
-  height:auto;
-}
-.infoPtOne {
-  width: 100%;
-  height:auto;
-}
+
 .lewrapper {
   display: flex;
   flex-direction: column;
@@ -333,6 +327,13 @@ image {
   width: 100%;
   height: 100%;
   overflow-wrap: break-word;
+}
+
+.infoKiosk {
+  margin-top: 15px;
+  margin-left: 170px;
+  justify-content: center;
+  height: 40px;
 }
 
 /* distance from date to temp icon */
