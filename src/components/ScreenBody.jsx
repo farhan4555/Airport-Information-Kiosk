@@ -21,7 +21,7 @@ function ScreenBody() {
           <Route path="/flights" element={<FlightsScreen/>} />
           <Route path="/wifi" element={<WifiScreen/>} />
           <Route path="/transportation/calgaryTransit" element={<TransportationExample/>} />
-          <Route path="/transportation/washrooms" element={<SearchExample/>} />
+          <Route path="/search/washrooms" element={<SearchExample/>} />
           <Route path="/*" element={<WelcomeScreen />} />
           <Route path= "/assistance" element = {<Assistance />} />
         </Routes>
