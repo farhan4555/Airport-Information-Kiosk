@@ -35,15 +35,8 @@ const resources = {
       taxi: "Taxi",
       carrental: "Car Rental",
       uber: "Uber",
-      calgarytransit: "Calgary Transit"
-      
-
-
-      
-
-      
-
-      
+      calgarytransit: "Calgary Transit",
+      cancel: "Cancel"
     },
   },
   es: {
@@ -79,7 +72,8 @@ const resources = {
       taxi: "Taxi",
       carrental: "Alquiler de coches",
       uber: "Uber",
-      calgarytransit: "Transporte de Calgary"
+      calgarytransit: "Transporte de Calgary",
+      cancel: "Cancelar"
     },
   },
   hi: {
@@ -115,8 +109,8 @@ const resources = {
       taxi: "टैक्सी",
       carrental: "गाड़ी किराए पर लेना",
       uber: 'ऊबर',
-      calgarytransit: "कैलगरी ट्रांजिट"
-
+      calgarytransit: "कैलगरी ट्रांजिट",
+      cancel: "रद्द करना"
     },
   },
   it: {
@@ -151,8 +145,8 @@ const resources = {
       taxi: "Taxi",
       carrental: "Noleggio auto",
       uber: "Uber",
-      calgarytransit: "Trasporti di Calgary"
-      
+      calgarytransit: "Trasporti di Calgary",
+      cancel: "Annullare"
     },
   },
 };
