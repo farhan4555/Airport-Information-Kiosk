@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import LanguageButton from './common/LanguageButton';
+import Assistance from './Assistance.jsx';
 
 function LanguageSelector() {
   const [selectedLanguage, setSelectedLanguage] = useState('English');

@@ -50,20 +50,20 @@ function BottomBar() {
     <Row className="bottomBar">
       <Col md={4} className="text-center">
         <div className="flex-container">
-          <img src="./src/components/images/cal.JPG" alt="calendar" />
+          <img src="./src/components/images/cal.png" alt="calendar" className= "botIcons"/>
           <span>{date || 'Loading...'}</span>
         </div>
       </Col>
       <Col md={1} className="text-center" />
       <Col md={3} className="text-center">
         <div className="flex-container">
-          <img src="./src/components/images/weat.JPG" alt="weather" />
+          <img src="./src/components/images/weat.png" alt="weather" className= "botIcons"/>
           <span>{temperature !== 'Loading...' ? `${temperature} ` : 'Loading...'}</span>
         </div>
       </Col>
       <Col md={3} className="text-center">
         <div className="flex-container">
-          <img src="./src/components/images/tim.JPG" alt="clock" />
+          <img src="./src/components/images/time.png" alt="clock" className= "botIcons"/>
           <span>{time || 'Loading...'}</span>
         </div>
       </Col>
