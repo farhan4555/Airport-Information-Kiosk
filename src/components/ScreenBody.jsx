@@ -27,7 +27,7 @@ function ScreenBody() {
           <Route path="/*" element={<WelcomeScreen />} />
           <Route path="/assistance" element={<AssistanceScreen />} />
         </Routes>
-        <div style={{ display: "flex", height: '10%', width: '100%' }}>
+        <div style={{ display: "flex", height: '10%', width: '100%', marginBottom: "15px", marginTop: "10px" }}>
           <LanguageSelector />
           <AssistanceButton />
         </div>
