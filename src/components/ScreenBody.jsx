@@ -17,21 +17,21 @@ function ScreenBody() {
     <div className='screenBody'>
       <BrowserRouter>
         <Routes>
-          <Route path="/map" element={<MapScreen/>} />
-          <Route path="/search" element={<SearchScreen/>} />
-          <Route path="/transportation" element={<TransportationScreen/>} />
-          <Route path="/flights" element={<FlightsScreen/>} />
-          <Route path="/wifi" element={<WifiScreen/>} />
-          <Route path="/transportation/calgaryTransit" element={<TransportationExample/>} />
-          <Route path="/search/washrooms" element={<SearchExample/>} />
+          <Route path="/map" element={<MapScreen />} />
+          <Route path="/search" element={<SearchScreen />} />
+          <Route path="/transportation" element={<TransportationScreen />} />
+          <Route path="/flights" element={<FlightsScreen />} />
+          <Route path="/wifi" element={<WifiScreen />} />
+          <Route path="/transportation/calgaryTransit" element={<TransportationExample />} />
+          <Route path="/search/washrooms" element={<SearchExample />} />
           <Route path="/*" element={<WelcomeScreen />} />
-          <Route path= "/assistance" element = {<AssistanceScreen />} />
+          <Route path="/assistance" element={<AssistanceScreen />} />
         </Routes>
+        <div style={{ display: "flex", height: '10%', width: '100%' }}>
+          <LanguageSelector />
+          <AssistanceButton />
+        </div>
       </BrowserRouter>
-      <div style ={{display: "flex", height: '10%', width: '100%'}}>
-      <LanguageSelector />
-      {/*<AssistanceButton />*/}
-      </div>
     </div>
   )
 }

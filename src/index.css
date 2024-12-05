@@ -54,7 +54,7 @@ image {
 
 .languageSelector {
   display: flex;
-  width: 95%;
+  width: 80%;
   height: 100%;
   border-radius: 30px;
   margin-left: 5px;
@@ -370,4 +370,17 @@ image {
   width: 70%;
   height: 100%;
   text-align:center;
+}
+
+.assistanceButton {
+  height: 45px;
+  width: auto;
+}
+
+.assistanceButtonContainer {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  margin-left: 20px;
+  align-content: center;
 }

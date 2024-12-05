@@ -1,15 +1,13 @@
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Assistance() {
+function AssistanceButton() {
   return (
-    <Link style={{ color: "black" }} to={"/assistance"}>
-      <button type="button" className="btn btn-dark text-nowrap">
-       <img src= "./src/components/images/assistance.png" alt="Assistance" className= "logo-img"/>
-      </button>
+    <Link to="/assistance" style={{ textDecoration: "none" }}>
+    <div className="assistanceButtonContainer">
+      <img src= "./src/components/images/assistance.png" alt="Assistance" className= "logo-img assistanceButton"/>
+    </div>
     </Link>
   );
-};
+}
 
-export default Assistance;
+export default AssistanceButton;
