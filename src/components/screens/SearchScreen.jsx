@@ -17,7 +17,7 @@ function ScreenScreen() {
       </div>
 
       <div className="p-3 flex-grow-0">
-        <Row className="mb-3">
+        <Row className="">
           <div className='genericTitle searchScreenTitle'>
             {t('searchTitle')}{}
           </div>
