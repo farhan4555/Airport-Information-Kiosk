@@ -24,6 +24,11 @@ body {
   align-items: center; /* Center vertically */
   height: 100vh; 
   margin: 0; 
+  background-image: url('./src/components/images/airport-background.jpg'); /* Path to your image */
+  background-size: cover; /* Make the image cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-attachment: fixed; /* Keep the image fixed while scrolling */
   }
 
 image {
@@ -142,7 +147,7 @@ image {
   font-size: 50px;
   color: white;
   font-weight: 700;
-  -webkit-text-stroke: 0.3px;
+  -webkit-text-stroke: 0.2px black;
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 
