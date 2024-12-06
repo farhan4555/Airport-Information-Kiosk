@@ -4,8 +4,10 @@ import BackButton from '../common/BackButton';
 import SelectorButton from '../common/SelectorButton';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
+import { useTranslation } from 'react-i18next'; // Import translation hook
 
 function TransportationExample() {
+  const { t } = useTranslation(); // useTranslation hook
   return (
     <Container className="page d-flex flex-column align-items-center">
       <div className='d-flex w-100 justify-content-left'>
@@ -14,21 +16,21 @@ function TransportationExample() {
 
         <Row className="mb-3">
           <div className='genericTitle searchScreenTitle'>
-            Directions to Bus Terminal
+            {t("dbusterminal")}
           </div>
         </Row>
       </div>
 
       <div className='d-flex flex-column align-items-center greyBackground'>
         <div className='genericTitle wifiInstructionText'>
-          You are currently in Airport, Terminal 3
+        {t("terminal2")}
         </div>
         <div className='genericTitle unableToConnectText'>
-          - Walk North for 50m to get to Door 2.  <br />
-          - Walk towards the Tim Hortons by the conveyer belt.<br />
-          - Make a sharp right -- walk towards the man in the grey hoodie.<br />
-          - Walk 50m South, and exit the airport via the closeby shuttle.<br />
-          - Walk 10m North to access the bus station.
+        {t("direction4")}  <br />
+        {t("direction5")}<br />
+        {t("direction6")}<br />
+        {t("direction7")}<br />
+        {t("direction8")}
         </div>
       </div>
     </Container>

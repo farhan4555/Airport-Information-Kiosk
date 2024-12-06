@@ -17,8 +17,8 @@ function AssistanceScreen() {
 
     <div className="assistanceBox">
         <div className='genericTitle wifiInstructionText'>
-          Hang tight! <br />
-          Help is on the way!
+          {t("hang")} <br />
+          {t("help")}
         </div>
         <div>
             <img src = "./src/components/images/assistance.png" />
@@ -26,10 +26,10 @@ function AssistanceScreen() {
     </div>
     
     <div className = "assistanceText1">
-        This message is being displayed because you clicked on the 'Call for Assistance' button.
+        {t("assistance")}
     </div>
     <div className = "assistanceText2">
-        If this was a mistake please click the button below to cancel.
+        {t("mistake")}
     </div>
         <SelectorButton text={t('cancel')} link="" />
     </Container>
