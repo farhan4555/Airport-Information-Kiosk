@@ -62,7 +62,7 @@ const resources = {
     translation: {
       welcome: "Bienvenue",
       toCalgary: "À Calgary!",
-      AirportMap: "Carte de l'",
+      AirportMap: "Plan de l'aéroport",
       searchAirport: "Rechercher un aéroport",
       transportation: "Transport",
       flights: "Vols",
