@@ -53,6 +53,7 @@ const resources = {
       direction6: "- Make a sharp right -- walk towards the man in the grey hoodie.",
       direction7: "- Walk 50m South, and exit the airport via the close by shuttle.",
       direction8: "- Walk 10m North to access the bus station.",
+      home: "Home"
     },
   },
   fr: {
@@ -106,6 +107,7 @@ const resources = {
       direction6: "- Faites un virage serré à droite — marchez vers l'homme portant le sweat à capuche gris.",
       direction7: "- Marchez 50 mètres au sud et sortez de l'aéroport par la navette à proximité.",
       direction8: "- Marchez 10 mètres vers le nord pour accéder à la station de bus.",
+      home: "Maison"
 
           
     },
@@ -161,6 +163,7 @@ const resources = {
       direction6: "- तेज़ दाहिना मोड़ लें — उस व्यक्ति की ओर चलें जो ग्रे हुडी पहने हुए है।",
       direction7: "- 50 मीटर दक्षिण की ओर चलें, और पास के शटल से हवाई अड्डे से बाहर निकलें।",
       direction8: "- बस स्टेशन तक पहुँचने के लिए 10 मीटर उत्तर में चलें।",
+      home: "घर"
     },
   },
   it: {
@@ -213,6 +216,7 @@ const resources = {
       direction6: "- Fai una brusca svolta a destra — cammina verso l'uomo con la felpa grigia.",
       direction7: "- Cammina 50 metri a sud ed esci dall'aeroporto tramite la navetta vicina.",
       direction8: "- Cammina 10 metri a nord per raggiungere la stazione degli autobus.",
+      home: "Casa"
 
 
     },

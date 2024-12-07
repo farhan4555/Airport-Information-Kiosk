@@ -14,7 +14,7 @@ function HomeButton() {
       className="btn btn-dark text-nowrap"
       onClick={() => navigate("/*")} // Replace "/welcome" with the actual route for your WelcomeScreen
     >
-      {t("Home")} {/* Translated text for "Home" */}
+      {t("home")} {/* Translated text for "Home" */}
     </button>
   );
 }
