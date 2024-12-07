@@ -1,25 +1,21 @@
 import Container from 'react-bootstrap/Container';
 import LogoButton from '../common/LogoButton';
 import BackButton from '../common/BackButton';
-import SelectorButton from '../common/SelectorButton';
+import CancelButton from '../common/CancelButton';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 import { useTranslation } from 'react-i18next'; // Import translation hook
-import HomeButton from '../common/HomeButton';
 
-function AssistanceScreen() {
+
+
+function AssistanceScreen({setVisibility}) {
     const {t } = useTranslation();
   return (
     <Container className="assistanceScreen">
-      <Row className="w-100 d-flex justify-content-between px-3 mb-1"> 
-      <BackButton />
-      <HomeButton />
-    </Row>
-
     <div className="assistanceBox">
         <div className='genericTitle wifiInstructionText'>
-          {t("hang")} <br />
-          {t("help")}
+        {t('helpTextPt1')}<br/>
+        {t('helpTextPt2')}
         </div>
         <div>
             <img src = "./src/components/images/assistance.png" />
@@ -27,12 +23,12 @@ function AssistanceScreen() {
     </div>
     
     <div className = "assistanceText1">
-        {t("assistance")}
+        {t('helpTextPt3')}
     </div>
     <div className = "assistanceText2">
-        {t("mistake")}
+        {t('helpTextPt4')}
     </div>
-        <SelectorButton text={t('cancel')} link="" />
+        <CancelButton text={t('cancel')} setVisibility={setVisibility} />
     </Container>
 
   );

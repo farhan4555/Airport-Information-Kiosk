@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 
-function AssistanceButton() {
+function AssistanceButton({setVisibility}) {
   return (
     <Link to="/assistance" style={{ textDecoration: "none" }}>
-    <div className="assistanceButtonContainer">
-      <img src= "./src/components/images/assistance.png" alt="Assistance" className= "logo-img assistanceButton"/>
-    </div>
+      <img src= "./src/components/images/assistance2.png" alt="Assistance" className="assistanceButtonImg" onClick={() => setVisibility(false)}/>
     </Link>
   );
 }

@@ -11,8 +11,11 @@ import TransportationExample from './screens/TransportationExample.jsx';
 import SearchExample from './screens/SearchExample.jsx';
 import AssistanceScreen from './screens/AssistanceScreen.jsx';
 import AssistanceButton from '../components/common/AssistanceButton.jsx';
+import useStickyState from '../components/useStickyState.jsx';
 
 function ScreenBody() {
+  const [visibility, setVisibility] = useStickyState(true, 'visibility');
+
   return (
     <div className='screenBody'>
       <BrowserRouter>
@@ -25,11 +28,15 @@ function ScreenBody() {
           <Route path="/transportation/calgaryTransit" element={<TransportationExample />} />
           <Route path="/search/washrooms" element={<SearchExample />} />
           <Route path="/*" element={<WelcomeScreen />} />
-          <Route path="/assistance" element={<AssistanceScreen />} />
+          <Route path="/assistance" element={<AssistanceScreen setVisibility={setVisibility}/>} />
         </Routes>
-        <div style={{ display: "flex", height: '10%', width: '100%', marginBottom: "15px", marginTop: "10px" }}>
+        <div style={{ display: "flex", height: '10%', width: '100%', justifyContent: 'space-evenly', alignItems: 'center'}}>
+          {visibility && (
+          <>
           <LanguageSelector />
-          <AssistanceButton />
+          <AssistanceButton setVisibility={setVisibility}/>
+          </>
+        )}
         </div>
       </BrowserRouter>
     </div>

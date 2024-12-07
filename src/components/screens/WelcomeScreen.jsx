@@ -13,10 +13,10 @@ function WelcomeScreen() {
             YYC
           </div>
           <div className="welcomeScreenWelcomeToText">
-            Welcome
+            {t("welcome")}
           </div> 
           <div className="welcomeScreenCalgaryText">
-            to Calgary
+            {t("toCalgary")}
           </div>           
 
       {/* Adjust the positioning of the buttons */}
@@ -32,8 +32,12 @@ function WelcomeScreen() {
         </div>
         <div className="grid-item">
         <div className = "welcomeButtonsInnerGrid">
+          <div className= "grid-item2">
           <LogoButton2 text={t("flights")} imgPath="./src/components/images/flight.png" link="flights" />
+          </div>
+          <div className= "grid-item2">
           <LogoButton2 text={t("wifi")} imgPath="./src/components/images/wifi.png" link="wifi" />
+          </div>
         </div>
         </div>
       </div>

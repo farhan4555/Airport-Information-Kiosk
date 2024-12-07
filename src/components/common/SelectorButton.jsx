@@ -5,7 +5,7 @@ import {
 function SelectorButton({ text, link }) {
   return (
     <Link style={{ color: "black" }} to={"/" + link}>
-      <button type="button" className="btn btn-light text-nowrap selectorButton">
+      <button type="button" className="btn btn-light text-nowrap selectorButtonLight">
         {text}
       </button>
     </Link>

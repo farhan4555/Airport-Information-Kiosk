@@ -59,24 +59,15 @@ image {
 
 .languageSelector {
   display: flex;
-  width: 80%;
-  height: 100%;
+  width: 70%;
+  height: 79%;
   border-radius: 30px;
-  margin-left: 5px;
-  justify-content: center;
+
+  justify-content: space-evenly;
+  align-items: center;
   gap: 10px;
   background-color: rgb(134, 134, 134);
-  margin-left: 10px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  padding-right: 2%;
-}
-
-
-.languageButton {
-  padding-left: 10px;
-  padding-top: 10px;
-  border-radius: 30px;
+  padding: 0px 175px 0px 175px;
 }
 
 .bottomBar {
@@ -122,14 +113,6 @@ image {
   color: #ffffff; /* Optional: Customize text color */
 }
 
-.jogo {
-  align-items: center;
-  justify-content: center;
-  width:auto;
-  height: 30%;
-  margin:auto;
-
-}
 .welcomeScreenYYCText {
   color: #bd0000;
   margin-top: -15px;
@@ -205,7 +188,7 @@ image {
 
 }
 
-.selectorButton {
+.selectorButtonLight {
   margin-right: 10px;
   margin-bottom: 10px;
   width: 180px;
@@ -244,21 +227,16 @@ image {
   width: 80%;
   color: gray;
 }
-.grid-item {
-  width: 50%;
-  height: 50%;
-
-}
 
 .logoButton {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* Vertically center the content */
-  justify-content: space-evenly;  /* Horizontally center the content */
+  align-items: center;  
+  justify-content: space-evenly;
   border-radius: 12px;
   width: 95%;
   height: 95%;
-  align-self: center;
+  
 }
 
 
@@ -275,8 +253,8 @@ image {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 60%;
 
@@ -284,9 +262,18 @@ image {
 .welcomeButtonsInnerGrid {
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: flex-start;
+  gap: 10px;
   width: 100%;
   height: 100%;
+}
+.grid-item {
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+.grid-item2 {
+  height: 45%;
 }
 
 .logo-img {
@@ -297,7 +284,6 @@ image {
   width: 30%;
   height: auto;
 }
-
 .titleScreen {
   display: flex;
   flex-direction: column;
@@ -345,10 +331,10 @@ image {
 .assistanceScreen {
   display: flex;
   flex-direction: column;
-  justify-content: around;
   align-items: center;
+  justify-content: space-evenly;
   height: 100%;
-
+  width: 100%;
 }
 .assistanceBox {
   display: flex;
@@ -356,8 +342,8 @@ image {
   align-items: center;
   background-image: linear-gradient(#818181, #616161);
   width:70%;
-  height: 100%;
-  padding: 15px 60px 40px 60px;
+
+  padding: 15px 60px 30px 60px;
   border-radius: 30px;
   
 }
@@ -366,7 +352,7 @@ image {
   font-size: 16px;
   color: white;
   width: 70%;
-  height: 100%;
+
   text-align:center;
 }
 
@@ -375,20 +361,32 @@ image {
   font-size: 14px;
   color: white;
   width: 70%;
-  height: 100%;
+
   text-align:center;
 }
 
 .assistanceButton {
-  height: 45px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+
+}
+.assistanceButtonImg{
+  height: 40px;
   width: auto;
+  border-radius: 12px;
 }
 
-.assistanceButtonContainer {
-  width: 100%;
-  height: 100%;
+.selectorButtonDark {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 180px;
   justify-content: center;
-  margin-left: 20px;
-  align-content: center;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #616161;
 }
 
