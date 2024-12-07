@@ -29,17 +29,17 @@ function LanguageSelector() {
         onClick={() => handleLanguageSelect('en')} // Change language to English
       />
       <LanguageButton
-        language="French"
+        language="Français"
         isSelected={currentLanguage === 'fr'}
         onClick={() => handleLanguageSelect('fr')} // Change language to French
       />
       <LanguageButton
-        language="Hindi"
+        language="हिंदी"
         isSelected={currentLanguage === 'hi'}
         onClick={() => handleLanguageSelect('hi')} // Change language to Hindi
       />
       <LanguageButton
-        language="Italian"
+        language="Italiano"
         isSelected={currentLanguage === 'it'}
         onClick={() => handleLanguageSelect('it')} // Change language to Italian
       />

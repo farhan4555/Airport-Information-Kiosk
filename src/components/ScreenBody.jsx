@@ -31,12 +31,9 @@ function ScreenBody() {
           <Route path="/assistance" element={<AssistanceScreen setVisibility={setVisibility}/>} />
         </Routes>
         <div style={{ display: "flex", height: '10%', width: '100%', justifyContent: 'space-evenly', alignItems: 'center'}}>
-          {visibility && (
-          <>
+
           <LanguageSelector />
           <AssistanceButton setVisibility={setVisibility}/>
-          </>
-        )}
         </div>
       </BrowserRouter>
     </div>
