@@ -4,13 +4,15 @@ import BackButton from '../common/BackButton';
 import SelectorButton from '../common/SelectorButton';
 import Table from 'react-bootstrap/Table';
 import Row from 'react-bootstrap/Row';
+import HomeButton from '../common/HomeButton';
 
 function FlightsScreen() {
   return (
     <Container className="page d-flex flex-column align-items-center">
-      <div className='d-flex w-100 justify-content-left mb-4'>
-        <BackButton />
-      </div>
+      <Row className="w-100 d-flex justify-content-between px-3 mb-1"> 
+      <BackButton />
+      <HomeButton />
+    </Row>
 
       <div className='p-2 w-100 '>
         <Table striped bordered hover size='sm' className='p-4'>

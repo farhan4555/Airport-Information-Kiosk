@@ -5,14 +5,18 @@ import SelectorButton from '../common/SelectorButton';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 import { useTranslation } from 'react-i18next'; // Import translation hook
+import HomeButton from '../common/HomeButton';
 
 function TransportationExample() {
   const { t } = useTranslation(); // useTranslation hook
   return (
     <Container className="page d-flex flex-column align-items-center">
-      <div className='d-flex w-100 justify-content-left'>
-        <BackButton />
-      </div><div className="p-3 flex-grow-0">
+      <Row className="w-100 d-flex justify-content-between px-3 mb-1"> 
+      <BackButton />
+      <HomeButton />
+    </Row>
+      
+      <div className="p-3 flex-grow-0">
 
         <Row className="mb-3">
           <div className='genericTitle searchScreenTitle'>

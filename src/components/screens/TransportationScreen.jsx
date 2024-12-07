@@ -4,7 +4,7 @@ import LogoButton from '../common/LogoButton';
 import BackButton from '../common/BackButton';
 import SelectorButton from '../common/SelectorButton';
 import { useTranslation } from 'react-i18next'; // Import translation hook
-
+import HomeButton from '../common/HomeButton';
 
 
 
@@ -12,9 +12,10 @@ function TransportationScreen() {
   const {t } = useTranslation();
   return (
     <Container className="page d-flex flex-column align-items-center">
-      <div className='d-flex w-100 justify-content-left'>
-        <BackButton />
-      </div>
+      <Row className="w-100 d-flex justify-content-between px-3 mb-1"> 
+      <BackButton />
+      <HomeButton />
+    </Row>
 
       {/* Adjust the positioning of the welcome text */}
       <div className="p-3 flex-grow-0">
