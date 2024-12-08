@@ -24,7 +24,7 @@ body {
   align-items: center; /* Center vertically */
   height: 100vh; 
   margin: 0; 
-  background-image: url('./src/components/images/airport-background.jpg'); /* Path to your image */
+  background-image: url('/airport-background.jpg'); /* Path to your image */
   background-size: cover; /* Make the image cover the entire viewport */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
