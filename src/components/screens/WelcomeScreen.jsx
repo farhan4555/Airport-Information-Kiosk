@@ -22,21 +22,21 @@ function WelcomeScreen() {
       {/* Adjust the positioning of the buttons */}
       <div className="welcomeButtonsGrid">
         <div className="grid-item">
-          <LogoButton text={t("AirportMap")}  imgPath="./src/components/images/map.png" link="map" />
+          <LogoButton text={t("AirportMap")}  imgPath="/Map.png" link="map" />
         </div>
         <div className="grid-item">
-        <LogoButton text={t("searchAirport")} imgPath="./src/components/images/search.png" link="search" />
+        <LogoButton text={t("searchAirport")} imgPath="/search.png" link="search" />
         </div>
         <div className="grid-item">
-        <LogoButton text={t("transportation")} imgPath="./src/components/images/taxi.png" link="transportation" />
+        <LogoButton text={t("transportation")} imgPath="/taxi.png" link="transportation" />
         </div>
         <div className="grid-item">
         <div className = "welcomeButtonsInnerGrid">
           <div className= "grid-item2">
-          <LogoButton2 text={t("flights")} imgPath="./src/components/images/flight.png" link="flights" />
+          <LogoButton2 text={t("flights")} imgPath="/flight.png" link="flights" />
           </div>
           <div className= "grid-item2">
-          <LogoButton2 text={t("wifi")} imgPath="./src/components/images/wifi.png" link="wifi" />
+          <LogoButton2 text={t("wifi")} imgPath="/wifi.png" link="wifi" />
           </div>
         </div>
         </div>

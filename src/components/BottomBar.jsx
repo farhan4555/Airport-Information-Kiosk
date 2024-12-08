@@ -61,7 +61,7 @@ function BottomBar() {
       {/* Date Section */}
       <Col md={4} className="text-center">
         <div className="flex-container bottomBarDate">
-          <img src="./src/components/images/cal.png" alt="calendar" className="botIcons" />
+          <img src="/cal.png" alt="calendar" className="botIcons" />
           <div className="fixed-position">
             <span>{date || 'Loading...'}</span>
           </div>
@@ -70,7 +70,7 @@ function BottomBar() {
 
       <Col md={4} className="text-center">
         <div className="flex-container bottomBarTemp">
-          <img src="./src/components/images/weat.png" alt="weather" className="botIcons" />
+          <img src="/weat.png" alt="weather" className="botIcons" />
           <span>{temperature !== 'Loading...' ? `${temperature} ` : 'Loading...'}</span>
         </div>
       </Col>
@@ -78,7 +78,7 @@ function BottomBar() {
       {/* Time Section (Static English Formatting) */}
       <Col md={4} className="text-center">
         <div className="flex-container">
-          <img src="./src/components/images/time.png" alt="clock" className="botIcons" />
+          <img src="/time.png" alt="clock" className="botIcons" />
           <span>{time || 'Loading...'}</span>
         </div>
       </Col>

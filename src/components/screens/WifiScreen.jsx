@@ -26,7 +26,7 @@ function WifiScreen() {
       </div>
 
       <div className='d-flex flex-column align-items-center greyBackground'>
-        <img src="./src/components/images/qr code.png" alt="weather" className='qrCodeImg'/>
+        <img src="/qr code.png" alt="weather" className='qrCodeImg'/>
         <div className='genericTitle wifiInstructionText'>
           {t("instruction")} <br />
         </div>
