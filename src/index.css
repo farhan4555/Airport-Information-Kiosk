@@ -59,15 +59,14 @@ image {
 
 .languageSelector {
   display: flex;
-  width: 70%;
+  width: 80%;
   height: 79%;
   border-radius: 30px;
-
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
   background-color: rgb(134, 134, 134);
-  padding: 0px 175px 0px 175px;
+  padding: 0px 0px 0px 5px;
 }
 
 .bottomBar {
