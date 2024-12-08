@@ -18,7 +18,7 @@ function AssistanceScreen({setVisibility}) {
         {t('helpTextPt2')}
         </div>
         <div>
-            <img src = "./src/components/images/assistance.png" />
+            <img src = "/assistance.png" />
         </div>
     </div>
     

@@ -28,7 +28,7 @@ function MapScreen() {
      
       <div className="w-100 px-3 d-flex flex-column align-items-center">
         <Row className="mb-3">
-          <img src={'./src/components/images/airport_map.jpg'} alt="Logo" className="mapImg" />
+          <img src={'/airport_map.jpg'} alt="Logo" className="mapImg" />
         </Row>
 
         <Row className="mb-3 p-3">

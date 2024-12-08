@@ -5,12 +5,12 @@ function Header() {
   return (
     <Row className="headerRow">
       <Col md={3}>
-        <img src="./src/components/images/logo.png" alt="logo" className="logo" />
+        <img src="/logo.png" alt="logo" className="logo" />
       </Col>
       <Col md={5}>
         <div className='informationKioskHeaderImgs d-flex justi'>
 
-          <img src="./src/components/images/infokiosk.png" alt="logo" className="infoKiosk" />
+          <img src="/infokiosk.png" alt="logo" className="infoKiosk" />
         </div>
       </Col>
     </Row>
